@@ -45,3 +45,13 @@ test_that("variable", {
   expect_equal((Reals$new()^"n") * (Reals$new()^2), Reals$new()^"n")
   expect_equal(x^2, x)
 })
+
+test_that("can test contain any length", {
+  tuples <- list(
+    Tuple$new(1),
+    Tuple$new(1, 2),
+    Tuple$new(1, 2, 3)
+  )
+  set <- Reals$new()^"n"
+  expect_true(set$contains(tuples, all = TRUE))
+})

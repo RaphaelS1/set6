@@ -1,6 +1,11 @@
-# set6 0.2.2
+# set6 0.2.2.9000
 
+* Containedness checks for 'n' dimensional sets no longer require same length vectors if power is
+"n"
+
+# set6 0.2.2
 * Fixed bug preventing `Logicals` from being deep cloned
+
 # set6 0.2.1
 
 * Bugfix in setcomplement (#65)
